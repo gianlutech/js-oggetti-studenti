@@ -13,8 +13,28 @@ const studentDescrp = {
 };
 for (let key in studentDescrp) {
     console.log(studentDescrp[key]);
-}
+};
 
+const studentList = [
+    {
+        studenti: [
+            { name: 'Mattia', surname: 'Stievano', age: '25' },
+            { name: 'Filippo', surname: 'Di Bella', age: '24' },
+            { name: 'Andrea', surname: 'Antonelli', age: '45' },
+        ]
+    }
+]
+for (let i = 0; i < studentList.length; i++) {
+    const currentStudent = studentList[i];
+    console.log(currentStudent)
+
+    for (let j = 0; j < currentStudent.studenti.length; j++) {
+        const students = currentStudent.studenti[j];
+        for (let key in students) {
+            console.log(`${students[key]} `)
+        }
+    }
+}
 
 
 
