@@ -6,3 +6,15 @@ console.log('JS OK');
 4. Ciclare su tutti gli studenti e stampare per ognuno di essi: nome e cognome.
 5. Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere all’array creato in precedenza, un nuovo oggetto studente inserendo nell’ ordine: nome, cognome e età. */
 
+const studentDescrp = {
+    name: 'Gianluca',
+    surname: 'Ingrao',
+    age: '24'
+};
+for (let key in studentDescrp) {
+    console.log(studentDescrp[key]);
+}
+
+
+
+
